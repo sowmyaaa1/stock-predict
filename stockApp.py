@@ -6,7 +6,7 @@ from datetime import date
 
 
 st.title("App for Stock Data")
-ticker = st.sidebar.text_input("Asset Name")
+ticker = st.sidebar.text_input("Stock Name")
 start_date = st.sidebar.date_input("Start Date ")
 end_date = st.sidebar.date_input("End Date ")
 
