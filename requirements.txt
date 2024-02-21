@@ -10,7 +10,7 @@ HTMLParser==0.0.2
 ipython==8.12.3
 ipywidgets==8.0.6
 Jinja2==3.1.2
-
+jnius==1.1.0
 jugaad_data==0.26
 keyring==24.3.0
 mock==5.1.0
