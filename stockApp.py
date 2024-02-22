@@ -2,12 +2,12 @@ import streamlit as st, pandas as pd , numpy as np
 import plotly.express as px
 from jugaad_data.nse import stock_df
 from datetime import date
-
+import datetime
 
 
 st.title("App for Stock Data")
-ticker = st.sidebar.text_input("Stock Name")
-start_date = st.sidebar.date_input("Start Date ")
+ticker = st.sidebar.text_input(label="Stock Name", value="Reliance")
+start_date = st.sidebar.date_input("Start Date ", datetime.date(2019, 7, 6))
 end_date = st.sidebar.date_input("End Date ")
 
 data = stock_df(symbol=ticker, from_date=start_date,
